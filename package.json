@@ -1,0 +1,25 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "esprima": "^3.1.3",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexisbellido/simple-wordpress-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexisbellido/simple-wordpress-theme/issues"
+  },
+  "homepage": "https://github.com/alexisbellido/simple-wordpress-theme#readme"
+}
