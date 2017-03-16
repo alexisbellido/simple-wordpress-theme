@@ -10,6 +10,8 @@
  */
 
  require_once( 'inc/class-ab-color.php' );
+ require_once( 'inc/class-animal.php' );
+ require_once( 'inc/class-dog.php' );
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -25,6 +27,9 @@ function simple_setup() {
 		'top'    => __( 'Top Menu', 'simple' ),
 		'social' => __( 'Social Links Menu', 'simple' ),
 	) );
-}
 
+	$dog = new Dog('fido');
+	$dog->sayName();
+	$dog->bark();
+}
 add_action( 'after_setup_theme', 'simple_setup' );

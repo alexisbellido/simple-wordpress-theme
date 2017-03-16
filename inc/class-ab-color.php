@@ -6,41 +6,40 @@
  * @package ab
  */
 
-class AB_COLOR {
+class AB_Color {
+	/**
+	 * Placeholder method
+	 *
+	 * @since 0.1.0
+	 */
+	public function __construct() { }
 
-  /**
-   * Placeholder method
-   *
-   * @since 0.1.0
-   */
-  public function __construct() { }
+	/**
+	 * Setup actions and filters
+	 *
+	 * @since 0.1.2
+	 */
+	public function setup() {
+		print '<h1>test setup for singleton instance of class AB_Color</h1>';
+	}
 
-  /**
-   * Setup actions and filters
-   *
-   * @since 0.1.0
-   */
-  public function setup() {
-    print '<h1>test setup for singleton instance of class AB_COLOR</h1';
-  }
+	/**
+	 * Return a singleton instance of the current class
+	 *
+	 * @since 0.1.0
+	 * @return EP_Sync_Manager
+	 */
+	public static function factory() {
+		static $instance = false;
 
-  /**
-   * Return singleton instance of class
-   *
-   * @return AB_COLOR
-   * @since 0.1.0
-   */
-  public static function factory() {
-    static $instance = false;
+		if ( ! $instance ) {
+			$instance = new self();
+			$instance->setup();
+		}
 
-    if ( ! $instance  ) {
-      $instance = new self();
-      $instance->setup();
-    }
-
-    return $instance;
-  }
+		return $instance;
+	}
 
 }
 
-AB_COLOR::factory();
+AB_Color::factory();
