@@ -8,6 +8,9 @@
  * @subpackage Simple
  * @since 1.0
  */
+
+ require_once( 'inc/class-ab-color.php' );
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
