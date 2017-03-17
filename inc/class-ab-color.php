@@ -21,7 +21,7 @@ class AB_Color {
 	 * @since 0.1.2
 	 */
 	public function setup() {
-		print '<h1>test setup for singleton instance of class AB_Color</h1>';
+		// print '<h1>test setup for singleton instance of class AB_Color</h1>';
 	}
 
 	/**

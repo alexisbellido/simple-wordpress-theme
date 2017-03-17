@@ -15,7 +15,6 @@
 ?>
 
 		</div><!-- #content -->
-		<h1>debug footer</h1>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">

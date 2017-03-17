@@ -40,27 +40,26 @@ function simple_setup() {
 		'social' => __( 'Social Links Menu', 'simple' ),
 	) );
 
-	// instantiate a new object of the class Dog using the good old way
-	$dog = new \Zoo\Mammals\Dog('fido');
-	$dog->sayName();
-	$dog->bark();
-
-	// shorter instantiation to access member of class in a single expression
-	(new \Zoo\Mammals\Cat('michi'))->meow();
-
-	// the standard way again, using different namespace
-	$snake = new \Zoo\Reptiles\Snake('lucy');
-	$snake->sayName();
-	$snake->hiss();
-
-	// imported
-	$dragon_1 = new Dragon('firebreather');
-	$dragon_1->breathe();
-
-	// imported with alias
-	$lizard_1 = new Lizzy('iguano');
-	$lizard_1->laugh();
-
+	// // instantiate a new object of the class Dog using the good old way
+	// $dog = new \Zoo\Mammals\Dog('fido');
+	// $dog->sayName();
+	// $dog->bark();
+	//
+	// // shorter instantiation to access member of class in a single expression
+	// (new \Zoo\Mammals\Cat('michi'))->meow();
+	//
+	// // the standard way again, using different namespace
+	// $snake = new \Zoo\Reptiles\Snake('lucy');
+	// $snake->sayName();
+	// $snake->hiss();
+	//
+	// // imported
+	// $dragon_1 = new Dragon('firebreather');
+	// $dragon_1->breathe();
+	//
+	// // imported with alias
+	// $lizard_1 = new Lizzy('iguano');
+	// $lizard_1->laugh();
 
 }
 add_action( 'after_setup_theme', 'simple_setup' );

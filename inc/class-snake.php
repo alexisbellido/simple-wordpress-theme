@@ -13,10 +13,10 @@ class Snake extends \Zoo\Animal {
 
 }
 
-// the standard way again, using current namespace
-$lil_snake = new Snake('little snaky');
-$lil_snake->hiss();
-
-// using fully qualified name (the namespace prefix)
-$lil_dog = new \Zoo\Mammals\Dog('puppy');
-$lil_dog->bark();
+// // the standard way again, using current namespace
+// $lil_snake = new Snake('little snaky');
+// $lil_snake->hiss();
+//
+// // using fully qualified name (the namespace prefix)
+// $lil_dog = new \Zoo\Mammals\Dog('puppy');
+// $lil_dog->bark();
