@@ -1,4 +1,5 @@
 <?php
+namespace Color;
 /**
  * AB functionas
  *
